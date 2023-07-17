@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
   
-    "name": "example_chromeExtension",
+    "name": "SSAFY_extensions",
     "description": "Print Hello, World! message",
     "version": "1.0.0",
   
@@ -12,5 +12,14 @@
     "permissions": [
       "tabs",
       "<all_urls>"
-    ]
+    ],
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["/my-content-script.js"],
+      "run_at": "document_start"
+    }],
+    "background": {
+      "scripts": ["/my-background-script.js"],
+      "persistent": false
+    }
   }
