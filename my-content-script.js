@@ -6,7 +6,7 @@ function save() { chrome.storage.local.get(["onoff"]).then((result) => {
   
     chrome.storage.local.get(["mute"]).then((result) => {
 
-mute = result.mutelist.split(';')
+mute = result.mutelist.split(' ')
 
 let last = mutelist.pop()
 
