@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
   
-    "name": "JONGTO_cleaner",
+    "name": "종토방 클리너",
     "short_name" : "JT_cleaner",
-    "description": "more comfortable stock-discussion board",
+    "description": "종목토론방에서 헛소리를 치워드립니다.",
     "version": "1.0.2",
     "author" : "fleemarket",
   
@@ -11,14 +11,12 @@
       "default_icon": "jongto-logo.png",
       "default_popup": "dpopup.html"
     },
-    "permissions": [
-      "tabs",
-      "<all_urls>"
-    ],
+    "permissions": [ "storage"],
     "content_scripts": [{
-      "matches": ["<all_urls>"],
+      "matches": ["https://finance.naver.com/*",
+                  "https://m.stock.naver.com/*" ],
       "js": ["/my-content-script.js"],
-      "run_at": "document_start"
+      "run_at": "document_end"
     }],
     "background": {
       "scripts": ["/my-background-script.js"],
