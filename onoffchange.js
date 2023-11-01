@@ -1,4 +1,4 @@
-
+//차단 ON/OFF 설정
   
   let onoff_switch = document.querySelector('#switch');
   let onoff_check = document.querySelector('.switch_label');

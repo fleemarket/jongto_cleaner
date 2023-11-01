@@ -1,4 +1,6 @@
-var script = document.createElement('script');
+//차단 체크
+
+const script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-3.6.3.min.js';
 chrome.storage.local.get(["onoff"]).then((result) => {
 if(result.onoff == "ON") {
