@@ -1,25 +1,19 @@
 {
-    "manifest_version": 2,
-  
-    "name": "종토방 클리너",
-    "short_name" : "JT_cleaner",
-    "description": "종목토론방에서 헛소리를 치워드립니다.",
-    "version": "1.0.2",
-    "author" : "fleemarket",
-  
-    "browser_action": {
-      "default_icon": "/image/jongto-logo.png",
-      "default_popup": "dpopup.html"
-    },
-    "permissions": [ "storage"],
-    "content_scripts": [{
+  "manifest_version": 3,
+  "name":  "종토방 클리너",
+  "version": "1.0.4",
+
+  "description": "더 쾌적한 네이버 종목토론방을 위하여.",
+  "icons": {"16": "image/jongto-logo.png", 
+            "128": "image/jongto-logo.png"},
+
+  "author" : "fleemarket",
+  "content_scripts": [{
       "matches": ["https://finance.naver.com/*",
                   "https://m.stock.naver.com/*" ],
       "js": ["/my-content-script.js"],
       "run_at": "document_end"
     }],
-    "background": {
-      "scripts": ["/my-background-script.js"],
-      "persistent": false
-    }
-  }
+  "permissions": [ "storage"]
+}
+
