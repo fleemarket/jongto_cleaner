@@ -8,7 +8,7 @@
     "author" : "fleemarket",
   
     "browser_action": {
-      "default_icon": "jongto-logo.png",
+      "default_icon": "/image/jongto-logo.png",
       "default_popup": "dpopup.html"
     },
     "permissions": [ "storage"],
