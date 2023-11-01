@@ -18,7 +18,6 @@
       document.getElementsByClassName("switch_label")[0].style.background = "#fff";
 
       document.getElementsByClassName("onf_btn")[0].style.left= "3px";
-      document.getElementsByClassName("onf_btn")[0].style.background= "#daa";
       document.getElementsByClassName("onf_btn")[0].style.boxShadow= "";
     }
     chrome.storage.local.set({ "onoff" : onoff }).then(() => {
