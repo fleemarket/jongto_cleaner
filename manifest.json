@@ -4,10 +4,15 @@
   "version": "1.0.4",
 
   "description": "더 쾌적한 네이버 종목토론방을 위하여.",
-  "icons": {"16": "image/jongto-logo.png", 
-            "128": "image/jongto-logo.png"},
+  "icons": {
+    "16": "image/jongto-logo.png", 
+    "128": "image/jongto-logo.png"},
 
   "author" : "fleemarket",
+
+  "action" : {
+    "default_popup" : "popup.html"
+  },
   "content_scripts": [{
       "matches": ["https://finance.naver.com/*",
                   "https://m.stock.naver.com/*" ],

@@ -38,6 +38,9 @@ README.md 작성.
 
 매니페스트 V2 => V3으로 수정
 로고 이미지 16 * 16, 128 * 128 추가, 이에 따른 매니페스트 경로 추가
+파일명 변경 (dpopup.html => popup.html, dpopup.js => popup.js)
+popup.html 수정
+
 ---
 ## 제작시 참고
 
