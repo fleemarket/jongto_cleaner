@@ -40,6 +40,7 @@ README.md 작성.
 로고 이미지 16 * 16, 128 * 128 추가, 이에 따른 매니페스트 경로 추가
 파일명 변경 (dpopup.html => popup.html, dpopup.js => popup.js)
 popup.html 수정
+에러트래킹 이미지 추가
 
 ---
 ## 제작시 참고
