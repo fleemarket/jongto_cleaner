@@ -8,20 +8,18 @@
     if(onoff_check) {
       onoff = "ON"
       document.getElementsByClassName("switch_label")[0].style.background = "#c44";
-    document.getElementsByClassName("switch_label")[0].style.border = "2px solid #c44";
 
-    document.getElementsByClassName("onf_btn")[0].style.left= "33px";
-    document.getElementsByClassName("onf_btn")[0].style.background= "#fff";
-    document.getElementsByClassName("onf_btn")[0].style.boxShadow= "1px 2px 3px #00000020";
+      document.getElementsByClassName("onf_btn")[0].style.left= "33px";
+      document.getElementsByClassName("onf_btn")[0].style.background= "#fff";
+      document.getElementsByClassName("onf_btn")[0].style.boxShadow= "1px 2px 3px #00000020";
     }
     else{
       onoff = "OFF"
       document.getElementsByClassName("switch_label")[0].style.background = "#fff";
-    document.getElementsByClassName("switch_label")[0].style.border = "border: 2px solid #daa";
 
-    document.getElementsByClassName("onf_btn")[0].style.left= "3px";
-    document.getElementsByClassName("onf_btn")[0].style.background= "#daa";
-    document.getElementsByClassName("onf_btn")[0].style.boxShadow= "";
+      document.getElementsByClassName("onf_btn")[0].style.left= "3px";
+      document.getElementsByClassName("onf_btn")[0].style.background= "#daa";
+      document.getElementsByClassName("onf_btn")[0].style.boxShadow= "";
     }
     chrome.storage.local.set({ "onoff" : onoff }).then(() => {
       console.log("Ban system is " + onoff);
