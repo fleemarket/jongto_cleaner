@@ -21,5 +21,5 @@
       document.getElementsByClassName("onf_btn")[0].style.boxShadow= "";
     }
     chrome.storage.local.set({ "onoff" : onoff }).then(() => {
-      console.log("Ban system is " + onoff);
+      console.log("차단 " + onoff);
     })});

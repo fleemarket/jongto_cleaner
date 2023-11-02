@@ -8,7 +8,6 @@ chrome.storage.local.get(["mutelist"]).then((result) => {
 
 
 })
-
 mute_button.addEventListener('click', function() {
     let theText = mute_input.value;
 

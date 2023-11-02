@@ -33,6 +33,7 @@ README.md 작성.
 개념어 통일 : ban => mute
 파일명 변경 ( banuser.js => muteuser.js)
 
+---
 
 ### ver 1.0.4 (231101)
 
@@ -41,6 +42,18 @@ README.md 작성.
 파일명 변경 (dpopup.html => popup.html, dpopup.js => popup.js)
 popup.html 수정
 에러트래킹 이미지 추가
+
+---
+
+### ver 1.0.5 (231102)
+
+popup.html 잘못된 경로 참조 수정
+자바스크립트 수정중, 먼저 차단 리스트에 명단을 넣고, 차단을 껐다 켜더라도 삭제하기 전까지는 명단이 계속 저장되어 있도록 하는 기능 구현 필요 확인
+onoffcheck.js 파일 제거, 예비파일 보유중. 
+11월 2일 동안 삭제된 파일이 영향을 미치는 지 확인 (이에 따라 popup.html 수정)
+my-content-script.js 중괄호 에러 여부 확인 (중요)
+
+
 
 ---
 ## 제작시 참고
