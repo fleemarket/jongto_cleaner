@@ -1,0 +1,22 @@
+{
+   "action": {
+      "default_popup": "popup.html",
+      "default_title": "내꺼"
+   },
+   "content_scripts": [ {
+      "js": [ "/my-content-script.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "description": "보기 싫은 이용자를 차단하면 아예 목록에서 지워주는 프로그램입니다",
+   "icons": {
+      "16": "faviconV2.png",
+      "48": "faviconV2.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkm68O4GoYlu1x+mMh3KMO+QSf7+orGWH4cggr1EG10LxilZeUJcc/ZKp9oXBmCRPrL4m9VcmkR6x72nSmj6soTOOMIdwhPTeL2fcF3CESmQZLLyJlOWxQeFYYeMzx1GP3/raiA87DzunRqljXk+Hh9nZcc/PrSuiuonExLICun+uexy33Jgf5uW33o+mhNxZ9Tak9gTOeKxw7wVfM1jkdKyA/XnpSLEwzduAY5dQlCe85lfUc0Etu6Jpo7Xxn/QCOnGbeYYqC3B+l8t4Chp7l9PD0JlJ4dDuKnFiqQxkK2jmLV+nS9ieSZbmRem4zeKbhIN3IJwj/+A4ZEULot6E7QIDAQAB",
+   "manifest_version": 3,
+   "name": "힙합엘이 이용자 게시글 차단 프로그램",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}
