@@ -1,24 +1,29 @@
 {
-  "manifest_version": 3,
-  "name":  "종토방 클리너",
-  "version": "1.0.4",
+    "manifest_version": 3,
+    "name": "종토방은 됐어요",
+    "version": "1.0.6",
 
-  "description": "더 쾌적한 네이버 종목토론방을 위하여.",
-  "icons": {
-    "16": "image/jongto-logo.png", 
-    "128": "image/jongto-logo.png"},
+    "description": "내 주식 투자에 네이버 종토방은 필요없다. ",
+    "icons": {
+        "16": "image/jongto-logo.png",
+        "128": "image/jongto-logo.png"
+    },
 
-  "author" : "fleemarket",
+    "author": "fleemarket",
 
-  "action" : {
-    "default_popup" : "popup.html"
-  },
-  "content_scripts": [{
-      "matches": ["https://finance.naver.com/*",
-                  "https://m.stock.naver.com/*" ],
-      "js": ["/my-content-script.js"],
-      "run_at": "document_end"
-    }],
-  "permissions": [ "storage"]
+    "action": {
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://finance.naver.com/*",
+                "https://m.stock.naver.com/*"
+            ],
+            "js": ["/my-content-script.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": ["storage", "activeTab", "scripting"]
 }
-

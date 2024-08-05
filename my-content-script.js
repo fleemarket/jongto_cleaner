@@ -1,39 +1,24 @@
-function save() { chrome.storage.local.get(["onoff"]).then((result) => {
+function mute() {
+    const tabJongto = document.querySelectorAll(".tabs_submenu li");
+    const containerJongto = document.querySelectorAll(".new_bbs .right");
+    console.log(containerJongto);
+    const indexToHide = 6;
 
-  if (result.onoff == "ON"){
-
-
-  
-    chrome.storage.local.get(["mute"]).then((result) => {
-    if (result.mutelist){
-      mute = result.mutelist.split(',')
+    if (indexToHide < tabJongto.length) {
+        tabJongto[indexToHide].style.display = "none";
+        containerJongto[0].style.display = "none";
+        const img = document.createElement("img");
+        img.src =
+            "https://img8.yna.co.kr/etc/inner/KR/2021/06/12/AKR20210612027700009_02_i_P2.jpg";
+        img.alt = "doge Image";
+        img.width = 320;
+        img.style.marginLeft = "20px";
+        img.style.marginTop = "10px";
+        containerJongto[0].parentNode.insertBefore(
+            img,
+            containerJongto[0].nextSibling
+        );
     }
-  })
-  }
-// let last = mutelist.pop()
-
-      // console.log(mute)
-
-if (mute){
-/* 종목토론방 => 개발자도구에서 태그명 또는 id, class 찾아서
-   쿼리셀렉터 인자 바꿀것 */
-  let authors = Array.from(document.querySelectorAll(".p11"))
-  // authors = 배열
-  for (let i = 0; i < authors.length; i++) {
-    let data = authors[i]
-
-
-  for (let j = 0; j < mute.length; j++){
-
-  if (data.includes(mute[j])){
-    data.parentNode.parentNode.removeChild(data.parentNode)
-
-
-  }
 }
-  }
-}
-})
-}
-  save();
 
+mute();
