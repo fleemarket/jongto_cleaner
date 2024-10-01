@@ -3,7 +3,7 @@
 **네이버 종목토론방을 거닐면서 덜 불쾌하게 도와주는 확장 프로그램**
 
 -   네이버 주식 종목토론방을 더 클린하게 이용할 수 있도록 도와주는 크롬 확장프로그램
--   ***
+-   [바로 가기](https://store.whale.naver.com/detail/piaoiniokbncjjkehgjkdohdemaobnpf)
 
 ## 패치노트
 
