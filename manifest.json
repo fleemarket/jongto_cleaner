@@ -3,7 +3,7 @@
     "name": "종토방 가림이",
     "version": "1.0.7",
 
-    "description": "내 주식 투자에 네이버 종토방은 필요없다. 네이버 주식 종목토론방을 가려드립니다. 종목토론방 대신 귀여운 도지를 보세요.",
+    "description": "네이버 증권을 더 잘 쓸 수 있도록 도와드립니다. ",
     "icons": {
         "16": "image/jongto-logo.png",
         "128": "image/jongto-logo.png"
