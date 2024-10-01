@@ -27,7 +27,8 @@ function mute() {
     // 종토방 미리보기 가리기
 
     if (isNaN(epsFloat) || epsFloat < 0) {
-        company_name[0].style.color("red"); // 적자
+        company_name[0].style.setProperty("color", "red", "important"); // 적자
+
         console.log("yes");
     }
 }
